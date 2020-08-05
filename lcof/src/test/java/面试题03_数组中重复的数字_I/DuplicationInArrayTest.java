@@ -1,4 +1,4 @@
-package 面试题03_数组中重复的数字;
+package 面试题03_数组中重复的数字_I;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -22,7 +22,7 @@ public class DuplicationInArrayTest {
     }
 
     @Test
-    public void findDuplicateNumber() {
+    public void findDuplicateNumber1() {
         int result = solution.findDuplicateNumber(nums);
         Assert.assertEquals(expected, result);
     }
