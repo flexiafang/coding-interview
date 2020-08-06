@@ -10,6 +10,10 @@ public class DuplicationInArray {
      * 解法1：二分查找
      */
     public int findDuplicate1(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return -1;
+        }
+
         int left = 1;
         int right = nums.length - 1;
 
@@ -40,6 +44,10 @@ public class DuplicationInArray {
      * 解法2：快慢指针（循环检测）
      */
     public int findDuplicate2(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return -1;
+        }
+
         int slow = 0;
         int fast = 0;
 

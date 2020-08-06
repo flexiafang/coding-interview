@@ -23,7 +23,7 @@ public class DuplicationInArrayTest {
 
     @Test
     public void findDuplicateNumber1() {
-        int result = solution.findDuplicateNumber(nums);
+        int result = solution.findDuplicate(nums);
         Assert.assertEquals(expected, result);
     }
 }

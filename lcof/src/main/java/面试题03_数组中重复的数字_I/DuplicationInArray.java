@@ -8,7 +8,11 @@ package 面试题03_数组中重复的数字_I;
  */
 public class DuplicationInArray {
 
-    public int findDuplicateNumber(int[] nums) {
+    public int findDuplicate(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return -1;
+        }
+
         for (int i = 0; i < nums.length; i++) {
             // 判断下标i与数值nums[i]是否相等
             while (i != nums[i]) {
@@ -19,6 +23,7 @@ public class DuplicationInArray {
                 swap(nums, i, nums[i]);
             }
         }
+
         return -1;
     }
 

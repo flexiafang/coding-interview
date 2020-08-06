@@ -27,6 +27,10 @@
 public class DuplicationInArray {
 
     public int findDuplicateNumber(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return -1;
+        }
+
         for (int i = 0; i < nums.length; i++) {
             // 判断下标i与数值nums[i]是否相等
             while (i != nums[i]) {
@@ -56,6 +60,10 @@ public class DuplicationInArray {
 public class DuplicationInArray {
     
     public int findDuplicate2(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return -1;
+        }
+
         int slow = 0;
         int fast = 0;
 
