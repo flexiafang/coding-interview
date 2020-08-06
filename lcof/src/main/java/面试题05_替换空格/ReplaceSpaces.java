@@ -10,6 +10,10 @@ public class ReplaceSpaces {
      * 解法1：使用字符数组
      */
     public String replaceSpaces1(String s) {
+        if (s == null || s.length() == 0) {
+            return s;
+        }
+
         int length = s.length();
         char[] arr = new char[length * 3];
         // 替换后的字符串的长度
@@ -34,6 +38,10 @@ public class ReplaceSpaces {
      * 解法2：使用StringBuilder
      */
     public String replaceSpaces2(String s) {
+        if (s == null || s.length() == 0) {
+            return s;
+        }
+
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
